@@ -13,7 +13,9 @@ The outcome of a Tideman election is determined by:
 
 A Tideman graph determines which candidate is most preferred by voters in a head-to-head matchup. Arrows are drawn from the most-preferred to least-preferred candidate in each pairing. In the below example Alice is the election winner even if she didn't carry the most first-choice votes.
 
+<div align="center">
 <img src="./TidemanGraph.png" width="600" />
+</div>
 
 One potential pitfall of a Tideman election is the creation of a cycle where Candidate A is preferred over Candidate B who is preferred over Candidate C who is preferred over Candidate A. In this scenario a winner cannot be identified. To overcome this hurdle the arrows (or edges) of the graph are locked in based on the strength of the victory. This is done sequentially as long as locking in an edge does NOT create a cycle.
 

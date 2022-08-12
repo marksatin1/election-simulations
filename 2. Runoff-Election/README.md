@@ -8,7 +8,7 @@ It is possible for a tie to occur between two or more candidates, but it is less
 
 **Note:** Some runoff elections don't require voters to rank every candidate but runoff.c assumes that all voters will rank all candidates on their ballot.
 
-The struct 'candidate' contains a person's name, the number of votes they received, and their elimination status. The ''candidates array contains all of these candidates.
+The struct 'candidate' contains a person's name, the number of votes they received, and their elimination status. The 'candidates' array contains all of these candidates.
 
 runoff.c takes between two and nine candidate names as arguments. Any more or less will throw an error. The module first prompts the user for the number of voters in the simulation which is maxed out at 100. Any more will throw an error as will entering a non-interger when prompted for votes.
 

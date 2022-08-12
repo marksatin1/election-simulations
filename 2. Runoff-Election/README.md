@@ -1,4 +1,4 @@
-# README
+# Runoff Election Simulator
 
 A plurality election is successful if one candidate has the majority of the vote, but if two or more candidates split the vote there is no logic involved to break the tie.
 

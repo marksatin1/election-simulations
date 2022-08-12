@@ -1,4 +1,4 @@
-# README
+# Tideman Election Simulator
 
 The Tideman (or "ranked pairs) electoral system is unique in that it doesn't neccesarily afford victory to the candidate with the majority of votes. Instead of pitting each candidate against the entire candidate pool it places all individual candidates in one-on-one matchups with all other individual candidates.
 

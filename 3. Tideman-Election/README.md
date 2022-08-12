@@ -48,6 +48,6 @@ VOTER 3
 Rank 1: Mark  
 Rank 2: Ben  
   
-### EXAMPLE OUTPUT
+### EXPECTED OUTPUT
   
 The election winner is Mark!

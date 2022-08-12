@@ -1,6 +1,6 @@
 # README
 
-The Tideman (or "ranked pairs) electoral system is unique in that it doesn't neccesarily afford victory to the candidate with the majority of votes. Rather of pitting each candidate against the entire candidate pool it places all individual candidates in one-on-one matchups with all other individual candidates.
+The Tideman (or "ranked pairs) electoral system is unique in that it doesn't neccesarily afford victory to the candidate with the majority of votes. Instead of pitting each candidate against the entire candidate pool it places all individual candidates in one-on-one matchups with all other individual candidates.
 
 In this system the winning candidate may not have the majority of first-choice votes, but when considering each voter's ranked choices they are the most preferred candidate over any other individual in the election.
 
@@ -24,13 +24,13 @@ tideman.c takes between two and nine candidate names as arguments. Upon executio
 
 The user is then prompted for each voter's ranked candidate choices. If the user enters the name of a person who is not running, an error is thrown and the user is reprompted to enter a candidate's name for that particular rank. A number of helper functions than use this data to determine the election winner.
 
-vote() records each voter's candidate preferences in the ranks array. record_preferences() then uses each voter's ranks array to tally how many times one candidate is preferred over another.
+**vote()** records each voter's candidate preferences in the ranks array. **record_preferences()** then uses each voter's ranks array to tally how many times one candidate is preferred over another.
 
-add_pairs() then places each candidate in a head-to-head matchup to determine which candidate would win and which would lose if only running against each other. sort_pairs() then ranks all candidate matchups in decreasing order by strength of victory. For example, if Candidate A beat Candidate B by a wider margin than Candidate A beat Candidate C then the A-B pairing would rank higher than the A-C pairing. This informaiton is then used to determine the edges in the candidate graph.
+**add_pairs()** then places each candidate in a head-to-head matchup to determine which candidate would win and which would lose if only running against each other. **sort_pairs()** then ranks all candidate matchups in decreasing order by strength of victory. For example, if Candidate A beat Candidate B by a wider margin than Candidate A beat Candidate C then the A-B pairing would rank higher than the A-C pairing. This informaiton is then used to determine the edges in the candidate graph.
 
-cycle_check() uses recursion to make sure that any candidate with an arrow pointing at them does not point back to the same candidate or to any other candidate in an "edge chain" that points to them. If a cycle is not created by adding the edge, then lock_pairs() locks in that edge. This avoids the creation of a cycle in the graph. 
+**cycle_check()** uses recursion to make sure that any candidate with an arrow pointing at them does not point back to the same candidate or to any other candidate in an "edge chain" that points to them. If a cycle is not created by adding the edge, then **lock_pairs()** locks in that edge. This avoids the creation of a cycle in the graph. 
 
-Finally, print_winner() iterates through each candidate matchup and to find the candidate who is locked in over every other candidate, and prints this person's name to the console.
+Finally, **print_winner()** iterates through each candidate matchup and to find the candidate who is locked in over every other candidate, and prints this person's name to the console.
 
 ### EXAMPLE INPUT
 

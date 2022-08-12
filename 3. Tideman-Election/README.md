@@ -20,7 +20,7 @@ One potential pitfall of a Tideman election is the creation of a cycle where Can
 
 ## CODE WALKTHROUGH
 
-tideman.c takes between two and nine candidate names as arguments. Upon execution the module queries the user for the number of voters in the election. The function handles errors behind the scenes and will throw errors if less than two or more than nine candidates are included as parameters or if a non-integer is entered for the number voters.
+*tideman.c* takes between two and nine candidate names as arguments. Upon execution the module queries the user for the number of voters in the election. The function handles errors behind the scenes and will throw errors if less than two or more than nine candidates are included as parameters or if a non-integer is entered for the number voters.
 
 The user is then prompted for each voter's ranked candidate choices. If the user enters the name of a person who is not running, an error is thrown and the user is reprompted to enter a candidate's name for that particular rank. A number of helper functions than use this data to determine the election winner.
 

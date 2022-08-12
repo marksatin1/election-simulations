@@ -1,4 +1,4 @@
-# README
+# Plurality Election Simulator
 
 In a plurality election, the candidate with the most votes out of all possible votes wins.
 
